@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ mc:Ignorable="d"
+ x:Class="App5.MainPage">
+    <StackLayout BackgroundColor="BurlyWood">
+
+        <StackLayout BackgroundColor="Beige" Margin="40" RotationY="0" Scale="1">
+            <Label Text="Welcome Evereybody!" x:Name="label" FontSize="30"
+                HorizontalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout VerticalOptions="Center" Margin="10" Padding="10"
+                BackgroundColor="LightSteelBlue">
+            <StackLayout BackgroundColor="LightCoral">
+                <Entry Placeholder="Phone Number" x:Name="phoneNumber" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20" Margin="20">
+                    <Button Text="Call me" Clicked="PlacePhoneCall" Rotation="-30" />
+                <Button Text="Open Web" Clicked="OpenWeb" Rotation="-30"/>
+                <Button Text="Rotate Label" Clicked="RotateLabel" Rotation="-30"/>
+            </StackLayout>
+
+            <StackLayout Padding="20" Spacing="20" BackgroundColor="GhostWhite">
+                <Button StyleId="Call" Text="Dial Number" Clicked="Button_OnClicked"/>
+                <Button StyleId="Rotate" Text="Rotate Label Link" Clicked="Button_OnClicked"/>
+                <Button StyleId="Web" Text="Open Web" Clicked="Button_OnClicked"/>
+            </StackLayout>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

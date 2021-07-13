@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.MainPage">
+
+    <StackLayout>
+        <StackLayout BackgroundColor="White" >
+            <Label x:Name="address" Text="Address"  BackgroundColor="Red" FontSize="30"/>
+            <Button x:Name="send" FontSize="30" BackgroundColor="Black"/>
+            <Label x:Name="screen" BackgroundColor="Red" FontSize="30"/>
+        </StackLayout>
+
+        <StackLayout BackgroundColor="White">
+            <Entry x:Name="name" Margin="5" />
+            <Button x:Name="Myname" FontSize="30"  />
+            <Label x:Name="show" BackgroundColor="Red" FontSize="30" />
+
+            <!--<Button Clicked="Button_Clicked"/>--> 
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
